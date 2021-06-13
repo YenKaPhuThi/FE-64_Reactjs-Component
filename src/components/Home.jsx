@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import Carousel from "./Carousel";
 import Content from "./Content";
-import Navbar from "./Navbar";
-import Promotion from "./Promotion";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default class Home extends Component {
   render() {
     return (
       <div className="bg-dark">
-        <Navbar />
+        <Header />
         <Carousel />
         <Content />
-        <Promotion />
+        <Footer />
       </div>
     );
   }
