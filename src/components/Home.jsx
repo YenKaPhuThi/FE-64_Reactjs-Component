@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "./Carousel";
-import Content from "./Content";
+import ProductList from "./ProductList";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -10,7 +10,7 @@ export default class Home extends Component {
       <div className="bg-dark">
         <Header />
         <Carousel />
-        <Content />
+        <ProductList />
         <Footer />
       </div>
     );
