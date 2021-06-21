@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
 export default class ProductItem extends Component {
+
+  
   renderProducts = () => {
     const productsHtml = this.props.products.map((item) => {
       return (
-        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3">
+        <div key={item.id} className="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3">
           <div className="card bg-light">
             <img
               className="card-img-top"

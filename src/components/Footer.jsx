@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 // Images
-import PromotionFirst from "../assets/images/promotion_1.png";
-import PromotionSecond from "../assets/images/promotion_2.png";
-import PromotionThird from "../assets/images/promotion_3.jpg";
+import PromotionFirst from "./../assets/images/promotion_1.png";
+import PromotionSecond from "./../assets/images/promotion_2.png";
+import PromotionThird from "./../assets/images/promotion_3.jpg";
 
 export default class Footer extends Component {
   render() {
