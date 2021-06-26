@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
 export default class ProductItem extends Component {
-
-  
   renderProducts = () => {
-    const productsHtml = this.props.products.map((item) => {
+    const { products, onViewDetail } = this.props;
+    const productsHtml = products.map((item) => {
       return (
-        <div key={item.id} className="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3">
+        <div
+          key={item.id}
+          className="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3"
+        >
           <div className="card bg-light">
             <img
               className="card-img-top"
@@ -17,7 +19,15 @@ export default class ProductItem extends Component {
             <div className="card-body text-center">
               <h4 className="card-title text-center">{item.title}</h4>
               <p className="card-text">{item.desc}</p>
-              <a href="/#" className="btn btn-primary">
+              <a
+                href="/#"
+                className="btn btn-primary"
+                onClick={() => {
+                  onViewDetail(item);
+                }}
+                data-toggle="modal"
+                data-target="#modalId"
+              >
                 Detail
               </a>
               <a href="/#" className="btn btn-danger ml-1">
